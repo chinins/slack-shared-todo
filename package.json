@@ -1,0 +1,23 @@
+{
+  "name": "slack-shared-todo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chinins/slack-shared-todo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chinins/slack-shared-todo/issues"
+  },
+  "homepage": "https://github.com/chinins/slack-shared-todo#readme",
+  "dependencies": {
+    "koa": "^2.6.1"
+  }
+}
