@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/chinins/slack-shared-todo#readme",
   "dependencies": {
-    "koa": "^2.6.1"
+    "koa": "^2.6.1",
+    "koa-bodyparser": "^4.2.1",
+    "koa-logger": "^3.2.0",
+    "koa-router": "^7.4.0"
   }
 }
