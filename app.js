@@ -1,3 +1,5 @@
+if (process.env.NODE_ENV !== 'production') require('dotenv').load();
+
 const Koa = require('koa');
 const bodyParser = require('koa-bodyparser');
 const logger = require('koa-logger');

@@ -10,7 +10,7 @@ const errorHandler = async (ctx, next) => {
     ctx.status = ctx.status >= 400 && ctx.status || 400;
     if (err.message) {
       ctx.body = {
-        errors: [err.message]
+        errors: [err.message],
       };
     }
   }

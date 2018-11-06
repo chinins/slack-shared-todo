@@ -18,9 +18,19 @@
   },
   "homepage": "https://github.com/chinins/slack-shared-todo#readme",
   "dependencies": {
+    "@slack/client": "^4.8.0",
+    "dotenv": "^6.1.0",
     "koa": "^2.6.1",
     "koa-bodyparser": "^4.2.1",
     "koa-logger": "^3.2.0",
     "koa-router": "^7.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1"
   }
 }

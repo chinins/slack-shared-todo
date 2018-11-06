@@ -1,10 +1,8 @@
 const router = require('koa-router')();
 
-router.get('/', () => {
-  console.log('get method');
-});
-router.post('/', () => {
-  console.log('post method');
-});
+const authMiddleware = require('./middlewares/verification');
+const todo = require('./controllers/todoController');
+
+router.post('/commands', authMiddleware, todo.postTodoItem);
 
 module.exports = router;
