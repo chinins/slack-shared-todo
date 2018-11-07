@@ -20,3 +20,14 @@ exports.findMessageByTimestamp = (timestamp, channel) => web.channels.history({
   inclusive: true,
 }).then(res => res)
   .catch(err => err.data);
+
+exports.chatUpdate = (channel, text, timestamp) => web.chat.update({
+  channel,
+  text,
+  ts: timestamp,
+}).then(res => res)
+  .catch(err => err.data);
+
+exports.getUser = userId => web.users.info({ user: userId })
+  .then(res => res.user.real_name)
+  .catch(err => err.data);
