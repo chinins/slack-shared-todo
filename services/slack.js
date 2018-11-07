@@ -13,6 +13,12 @@ exports.pinMessage = messageResponse => web.pins.add({
 }).then(res => res)
   .catch(err => err.data);
 
+exports.removePin = (channel, timestamp) => web.pins.remove({
+  channel,
+  timestamp,
+}).then(res => res)
+  .catch(err => err.data);
+
 exports.findMessageByTimestamp = (timestamp, channel) => web.channels.history({
   channel,
   count: 1,
