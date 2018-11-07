@@ -12,3 +12,11 @@ exports.pinMessage = messageResponse => web.pins.add({
   timestamp: messageResponse.ts,
 }).then(res => res)
   .catch(err => err.data);
+
+exports.findMessageByTimestamp = (timestamp, channel) => web.channels.history({
+  channel,
+  count: 1,
+  latest: timestamp,
+  inclusive: true,
+}).then(res => res)
+  .catch(err => err.data);
